@@ -1,0 +1,6 @@
+[
+    {"code": "en", "name": "English", "targets": ["fr", "ja", "zh-Hans"]},
+    {"code": "fr", "name": "French", "targets": ["en", "ja"]},
+    {"code": "ja", "name": "Japanese", "targets": ["en", "fr"]},
+    {"code": "eo", "name": "Esperanto", "targets": ["en"]}
+]

@@ -1,0 +1,31 @@
+{
+    "$schema": "https://github.com/glitchr-omnisense/contracts/blob/1.x/resources/usage-policy.schema.json",
+    "provider": "libretranslate",
+    "rateLimits": [],
+    "rights": {
+        "commercial": "allowed",
+        "openSourceRequired": null,
+        "caching": {"permission": "allowed", "maxTtl": null},
+        "storage": "unknown",
+        "redistribution": "unknown",
+        "attribution": {
+            "required": false,
+            "text": null,
+            "url": null,
+            "where": []
+        },
+        "licence": null
+    },
+    "requirements": {
+        "key": false,
+        "userAgent": {"required": false, "pattern": null}
+    },
+    "provenance": {
+        "terms": "https://github.com/LibreTranslate/LibreTranslate",
+        "policy": "https://docs.libretranslate.com/guides/installation/",
+        "verifiedAt": "2026-11-10",
+        "declaredBy": "maintainer",
+        "contact": null,
+        "notes": "Read on 2026-11-10, for a server the site runs itself: LibreTranslate is software (AGPL-3.0, API 1.9.6), not a service with terms, so its limits and rights are the operator's - none by default (--req-limit, --char-limit, --batch-limit: 'No limit'; --api-keys: disabled). A site that starts its server with limits writes them in its policy option, so that the guard counts them; the server answers 429 ('Slow down') beyond them. AGPL-3.0 binds whoever modifies and serves LibreTranslate itself, not an application calling its API. Data retention: a self-hosted server's is its operator's (nothing in the docs read says it keeps texts). Storage and redistribution of translations: they come from Argos Translate's language models, whose licences were not read, hence unknown. libretranslate.com, the public instance, is not this policy: it needs a paid key (Pro: bursts of 80 a minute, 2,000 characters a call; Business: 200 a minute), does not store or log texts, keeps IP addresses and keys 2 days against abuse; its mirrors say nothing of programmatic use, so no live call is made from this package's tests."
+    }
+}
