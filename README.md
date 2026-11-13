@@ -12,6 +12,13 @@ site runs itself (AGPL-3.0, Argos Translate's models), no key by default.
 
 No glossary, no formality.
 
+```sh
+composer require omnisense/omnilang omnilang/libretranslate
+```
+
+It needs a LibreTranslate server of your own (no key by default). Its tests run on recorded answers and need none; omnilang's README has a first call
+on a recorded client.
+
 ```php
 use Omnilang\Libretranslate\LibretranslateFactory;
 use Omnilang\Model\TranslationQuery;
